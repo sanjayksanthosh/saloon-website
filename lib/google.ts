@@ -19,12 +19,11 @@ export async function createCalendarEvent(booking: BookingEvent) {
         // The private key can be messy with newlines, so we replace literal \n with real newlines just in case
         const SCOPES = ['https://www.googleapis.com/auth/calendar.events'];
 
-        const auth = new google.auth.JWT(
-            process.env.GOOGLE_CLIENT_EMAIL,
-            undefined,
-            process.env.GOOGLE_PRIVATE_KEY?.replace(/\\n/g, '\n'),
-            SCOPES
-        );
+        const auth = new google.auth.JWT({
+            email: process.env.GOOGLE_CLIENT_EMAIL,
+            key: process.env.GOOGLE_PRIVATE_KEY?.replace(/\\n/g, '\n'),
+            scopes: SCOPES,
+        });
 
         const calendar = google.calendar({ version: 'v3', auth });
 
