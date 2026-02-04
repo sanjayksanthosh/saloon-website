@@ -159,7 +159,7 @@ export default function Home() {
       <section className="py-24 relative bg-slate-900 overflow-hidden">
         <div className="absolute inset-0 opacity-40">
           <Image
-            src="https://images.unsplash.com/photo-1560066984-138fa6ca0bd5?auto=format&fit=crop&q=80&w=1600"
+            src="https://images.unsplash.com/photo-1600948836101-f9ffda59d250?auto=format&fit=crop&q=80&w=1600"
             alt="Background"
             fill
             className="object-cover"
