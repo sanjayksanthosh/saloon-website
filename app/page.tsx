@@ -51,22 +51,22 @@ export default function Home() {
                 </Button>
               </div>
             </div>
-            <div className="lg:w-1/2 relative">
+            <div className="lg:w-1/2 relative w-full">
               <div className="grid grid-cols-2 gap-4">
                 <div className="space-y-4 translate-y-8">
-                  <div className="relative w-full h-64 rounded-2xl overflow-hidden shadow-lg">
-                    <Image src="https://images.unsplash.com/photo-1560869713-7d0a29430803?auto=format&fit=crop&q=80&w=800" alt="Styling" fill className="object-cover" />
+                  <div className="relative w-full h-40 sm:h-64 rounded-2xl overflow-hidden shadow-lg">
+                    <Image src="https://images.unsplash.com/photo-1560869713-7d0a29430803?auto=format&fit=crop&q=80&w=800" alt="Styling" fill className="object-cover" sizes="(max-width: 768px) 50vw, 33vw" />
                   </div>
-                  <div className="relative w-full h-48 rounded-2xl overflow-hidden shadow-lg">
-                    <Image src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&q=80&w=800" alt="Salon" fill className="object-cover" />
+                  <div className="relative w-full h-32 sm:h-48 rounded-2xl overflow-hidden shadow-lg">
+                    <Image src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&q=80&w=800" alt="Salon" fill className="object-cover" sizes="(max-width: 768px) 50vw, 33vw" />
                   </div>
                 </div>
                 <div className="space-y-4">
-                  <div className="relative w-full h-48 rounded-2xl overflow-hidden shadow-lg">
-                    <Image src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&q=80&w=800" alt="Makeup" fill className="object-cover" />
+                  <div className="relative w-full h-32 sm:h-48 rounded-2xl overflow-hidden shadow-lg">
+                    <Image src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&q=80&w=800" alt="Makeup" fill className="object-cover" sizes="(max-width: 768px) 50vw, 33vw" />
                   </div>
-                  <div className="relative w-full h-64 rounded-2xl overflow-hidden shadow-lg">
-                    <Image src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&q=80&w=800" alt="Haircut" fill className="object-cover" />
+                  <div className="relative w-full h-40 sm:h-64 rounded-2xl overflow-hidden shadow-lg">
+                    <Image src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&q=80&w=800" alt="Haircut" fill className="object-cover" sizes="(max-width: 768px) 50vw, 33vw" />
                   </div>
                 </div>
               </div>
@@ -114,7 +114,7 @@ export default function Home() {
       <section className="py-20 bg-stone-50 overflow-hidden">
         <div className="container mx-auto px-6">
           <div className="flex flex-col lg:flex-row items-center gap-16">
-            <div className="lg:w-1/2 relative">
+            <div className="lg:w-1/2 relative w-full">
               <div className="relative z-10 w-full h-[500px] rounded-3xl overflow-hidden shadow-2xl">
                 <Image
                   src="https://images.unsplash.com/photo-1633681926022-84c23e8cb2d6?auto=format&fit=crop&q=80&w=800"
@@ -193,7 +193,7 @@ export default function Home() {
           loading="lazy"
           className="grayscale hover:grayscale-0 transition-all duration-500"
         ></iframe>
-        <div className="absolute top-8 left-8 bg-white/90 backdrop-blur-sm p-6 rounded-xl shadow-lg max-w-xs hidden md:block">
+        <div className="absolute top-8 left-8 right-8 md:right-auto bg-white/90 backdrop-blur-sm p-6 rounded-xl shadow-lg md:max-w-xs">
           <h3 className="font-serif text-xl text-slate-900 mb-2">Visit Us</h3>
           <p className="text-slate-600 mb-4">
             Located in the heart of Kochi, providing accessible luxury for everyone.
